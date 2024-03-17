@@ -7,11 +7,13 @@ spacebarspamming := false
 rightclickspamming := false
 autofeeding := false
 
-Gui +AlwaysOnTop
-Gui, Add, Text, x+10 y+10 w200 h60 vStatusText, Left Click Farming: Off`nSpacebar Farming: Off`nRight Click Spamming: Off`nAuto Feeding: Off
-Gui, Add, Text, x+10 y+70 w200 h60 cBlack, Press F9 to toggle Left Click Farming`nPress F10 to toggle Spacebar Farming`nPress F8 to toggle Right Click Spamming`nPress F7 to toggle Auto Feeding
+Gui +LastFound +AlwaysOnTop +ToolWindow 
+Gui, Color, 808080 
+Gui, Add, Text, x+10 y+10 w200 h60 vStatusText cWhite, Left Click Farming: Off`nSpacebar Farming: Off`nRight Click Spamming: Off`nAuto Feeding: Off
+Gui, Add, Text, x+10 y+70 w200 h60 cWhite, Press F9 to toggle Left Click Farming`nPress F10 to toggle Spacebar Farming`nPress F8 to toggle Right Click Spamming`nPress F7 to toggle Auto Feeding
 Gui, Add, Button, x+10 y+130 w100 h30 gExitScript, Exit
 Gui, Show, x0 y0
+WinSet, Transparent, 150, A 
 
 F7::
     autofeeding := !autofeeding
