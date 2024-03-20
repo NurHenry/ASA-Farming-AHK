@@ -109,7 +109,7 @@ SpacebarSpam:
     if (spacebarspamming) {
         Random, rand, 10, 100
         SendInput {Space}
-        Sleep, %rand%
+        Sleep, %rand%+
     }
 return
 
